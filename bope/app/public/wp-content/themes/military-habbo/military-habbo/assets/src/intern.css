@@ -1,0 +1,23 @@
+.intern {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.card--intern {
+  background-color: var(--Black800);
+  box-shadow: var(--Shadow);
+}
+.card--intern article header.entry-header .entry-title {
+  text-align: center;
+  color: var(--White);
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px var(--Black);
+}
+.card--intern article .entry-content {
+  padding: 0 35px;
+  color: var(--White);
+}
+.intern .card--highlights-praca {
+  margin-bottom: 25px;
+}

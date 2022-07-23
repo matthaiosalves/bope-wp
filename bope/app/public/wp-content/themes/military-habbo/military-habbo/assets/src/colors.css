@@ -1,0 +1,21 @@
+:root {
+  --LightSkyBlue:#87CEFA;
+  --Blue900:#0e1d41;
+  --Blue800:#00ddff;
+  --Blue600:#476789;
+  --Blue500:#76b4c4;
+  --Blue400:#3369a3;
+  --Blue200:#006cad;
+  --Blue100:#d3dff0;
+  --White:#fff;
+  --Black:#000;
+  --Black800:#1c1c1c;
+  --Black500:#00000024;
+  --Yellow500:rgb(255, 251, 0);
+  --Yellow600:#ffd600;
+  --Orange600: #ff9800;
+  --Red600:rgb(255, 0, 0);
+  --Red500:#650000;
+  --Pink600:rgb(255, 0, 119);
+  --Shadow:0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}

@@ -1,0 +1,140 @@
+/*Form*/
+.military-search .military-search--image-board {
+  background-image: url(../../assets/img/Military-Search/hc_center_postit_bg_184x95.png);
+  background-repeat: no-repeat;
+  height:90px;
+  background-position: center center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  filter: drop-shadow(0px 5px 20px var(--Orange600));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Orange600));
+
+  margin-top: -49px;
+  z-index: 2;
+}
+.military-search form  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -55px;
+}
+.military-search input {
+  max-width: 590px;
+  width: 100%;
+  height: 50px;
+  padding-left: 45px;
+  border: 0;
+  font-size: 14pt;
+  background: var(--Red500);
+  color: var(--White);
+  border-radius: 15px;
+  box-shadow: var(--Shadow);
+}
+.military-search button {
+  background-color: transparent;
+  border:0;
+  border-color: transparent;
+}
+.military-search .button--image-search {
+  margin-left: -80px;
+
+  position: relative;
+}
+/*End Form*/
+
+/*Results*/
+.military-search--researching-military {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -64px;
+}
+.military-search--researching-military .military-search--arrow-up {
+  display: inline-block;
+  margin-bottom: -8px;
+  margin-left: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid var(--Blue500);
+}
+.military-search--researching-military .card--researching-military ,
+.military-search--researching-military .card-military-search--search-result {
+  width: 100%;
+  background-color: var(--Black800);
+  height:250px;
+  border:0;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 25px;
+  padding: 15px;
+}
+.military-search--researching-military .military-search--circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--Blue900);
+
+  background-image: url('https://www.habbo.com.br/habbo-imaging/avatarimage?user=Cmd-Peralta&action=std&direction=2&head_direction=3&gesture=sml&size=l');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.military-search--researching-military .military-search--result {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--Blue900);
+}
+.military-search--researching-military .military-search--image-loading {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+
+#saida,
+#saida2 {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--Black800);
+  filter: drop-shadow(0px 5px 20px var(--Red500));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Red500));
+  color: var(--White);
+  border-radius: 5px;
+
+  z-index: -1;
+  position: relative;
+}
+.resultado-box {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.pesquisa-fundo {
+  position: relative;
+  display: inline-block;
+  background-image: url(../images/fundo_pesquisa.png);
+  border-radius: 500px;
+  width: 120px;
+  height: 120px;
+}
+.pesquisa-avatar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 4px solid #fff;
+  border-radius: 500px;
+  background-position: center top -30px;
+}
+  
+/*End Results*/

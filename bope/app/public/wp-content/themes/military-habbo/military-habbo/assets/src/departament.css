@@ -1,0 +1,32 @@
+.departament {
+  margin-top: 25px;
+}
+.card--departament {
+  background-color: var(--Black800);
+  box-shadow: var(--shadow);
+  border: 0;
+
+  cursor: pointer;
+
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+
+  background-image: url(../../assets/img/Welcome/bonitinho.png);
+}
+.card--departament:hover {
+  filter: brightness(0.9);
+  filter: drop-shadow(0px 5px 10px var(--Red500));
+  -webkit-filter: drop-shadow(0px 5px 10px var(--Red500));
+}
+.card--departament .card-header {
+  display: flex;
+  align-items:center;
+  gap: 15px;
+}
+.card--departament .card-header h5 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--White);
+}

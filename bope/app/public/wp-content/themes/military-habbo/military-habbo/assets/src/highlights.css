@@ -1,0 +1,50 @@
+.highlights {
+  margin-top: 20px;
+}
+.card--highlights-oficial {
+  height: 280px;
+  border: 0;
+  background: linear-gradient(185deg,rgba(0,0,0,0) 50%,var(--Red500)),
+  url(../../assets/img/Highlights/7a80721a-dc9e-4952-9962-63f50fb7508b.jpg) left bottom;
+  box-shadow: var(--Shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.card--highlights-praca {
+  height: 280px;
+  border: 0;
+  background: linear-gradient(185deg,rgba(0,0,0,0) 50%,var(--Red500)), url(../../assets/img/Highlights/7a80721a-dc9e-4952-9962-63f50fb7508b.jpg) left bottom;
+  box-shadow: var(--Shadow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.card--highlights-oficial .card--highlights-description,
+.card--highlights-praca .card--highlights-description {
+  color: var(--White);
+  text-shadow: 0 2px var(--Black);
+  text-align: center;
+  margin-bottom: 14px;
+}
+.card--highlights-oficial .card--highlights-description h5,
+.card--highlights-praca .card--highlights-description h5 {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+.card--highlights-oficial .card--highlights-description p,
+.card--highlights-praca .card--highlights-description p {
+  font-size: 16px;
+}
+
+/*Carousel*/
+.carousel--airforce {
+  max-height: 280px;
+  border: 0;
+  box-shadow: var(--Shadow);
+  overflow:hidden;
+}

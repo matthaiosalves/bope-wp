@@ -1,0 +1,33 @@
+.background--animate {
+  height:300px;
+  background:var(--Black500);
+  margin-top: 60px;
+  filter: brightness(.85);
+  box-shadow: var(--Shadow);
+  background-image: url(../../assets/img/Header/bgbope.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: drop-shadow(0px 5px 20px var(--Black));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Black));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+}
+.background--animate .background--animate-logo {
+  max-width: 600px;
+  width: 100%;
+
+  filter: drop-shadow(0px 5px 20px var(--Red600));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Red600));
+}
+
+.background--animate .background--animate-sophia {
+  width: 160px;
+  position: absolute;
+  left: 65%;
+  top: -10px;
+}

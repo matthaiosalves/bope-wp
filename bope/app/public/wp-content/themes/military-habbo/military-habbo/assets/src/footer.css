@@ -1,0 +1,53 @@
+footer {
+  background-color: var(--Black);
+  margin-top: 25px;
+  background-image: url(../../assets/img/Footer/bopefooter.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+.footer--copyright {
+  color: var(--White);
+  padding: 30px;
+}
+.footer--copyright .container h6 {
+  font-size: 18px;
+}
+.footer--copyright .container .footer--social {
+  margin-top: 15px;
+  display:flex;
+  gap: 10px;
+}
+.footer--copyright .container hr {
+  border-bottom: 1px solid var(--Blue100);
+}
+.footer--copyright .footer--habbo-icon {
+  filter: drop-shadow(0px 5px 20px var(--Yellow500));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Yellow500));
+}
+.footer--social a:nth-child(1) {
+  filter: drop-shadow(0px 5px 20px var(--Pink600));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Pink600));
+}
+.footer--social a:nth-child(2) {
+  filter: drop-shadow(0px 5px 20px var(--Red600));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Red600));
+}
+.footer--social a:nth-child(3) {
+  filter: drop-shadow(0px 5px 20px var(--Yellow500));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Yellow500));
+}
+.footer--social a:nth-child(4) {
+  filter: drop-shadow(0px 5px 20px var(--Red500));
+  -webkit-filter: drop-shadow(0px 5px 20px var(--Red500));
+}
+.footer--social a:nth-child(4) img {
+  width: 32px;
+  height: 32px;
+}
+
+/*Airplante*/
+.airplane--button {
+  position: fixed;
+  top: 75%;
+  right: -4px;
+}

@@ -1,0 +1,56 @@
+.be-welcome {
+  margin-top: 25px;
+}
+.card--be-welcome {
+  width: 100%;
+  height: 110px;
+  color: var(--White);
+  padding: 0;
+  overflow: hidden;
+  box-shadow: var(--Shadow);
+  border: 0;
+}
+.card--be-welcome > div {
+  padding-top: 20px;
+  padding-left: 40px;
+  text-transform: uppercase;
+  background: linear-gradient(100deg, var(--Red500), var(--Red600), var(--Red500), var(--Red600));
+  width: 100%;
+  height: 100%;
+  color: var(--White);
+}
+.card--be-welcome div h2 {
+  font-size: 31px;
+  font-weight: 900;
+}
+.card--be-welcome div p {
+  font-size: 12px;
+  font-weight: 300;
+}
+.card--be-welcome .card-body {
+  position: relative;
+}
+.card--be-welcome .card-body > div {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+
+  position:absolute;
+  bottom: 40px;
+  left: 0;
+
+  padding-top: 20px;
+  padding-left: 40px;
+  width: 100%;
+  height: 100%;
+  color: var(--White);
+}
+.card--be-welcome .card-body > div .new--members {
+  margin-top: -10px;
+  margin-right: -24px;
+  margin-left: -24px;
+}
+
+
+

@@ -1,0 +1,34 @@
+@media (max-width: 992px) {
+  .navbar--bope .container #navbarNav ul .nav-item {
+    background-color: var(--Blue600);
+  }
+  .news--quick-acess a {
+    width: 100%;
+  }
+  .carousel--airforce, 
+  .card--highlights-praca,
+  .card--departament {
+    margin-bottom: 25px;
+  }
+  .news--information,
+  .news--quick-acess {
+    margin-top: 25px;
+  }
+  .airplane--button {
+    top: 85%;
+  }
+  .card--be-welcome .card-body > div .new--members:nth-child(1) {
+    visibility: hidden;
+  }
+  .card--be-welcome .card-body > div .new--members:nth-child(2) {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 475px) {
+  .card--be-welcome .card-body > div .new--members,
+  .airplane--button,
+  .background--animate .background--animate-sophia {
+    display: none;
+  }
+}
