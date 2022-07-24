@@ -14,6 +14,9 @@
   transition: all .4s;
 
   background-image: url(../../assets/img/Welcome/bonitinho.png);
+
+  max-width: 546px;
+  width: 100%;
 }
 .card--departament:hover {
   filter: brightness(0.9);

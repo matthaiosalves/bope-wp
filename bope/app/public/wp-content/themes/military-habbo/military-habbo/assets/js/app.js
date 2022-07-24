@@ -1,35 +1,29 @@
 if(document.querySelector("#departament")) {
-  const instrutor = document.querySelector("#instrutor");
-  instrutor.addEventListener("click", function() {
-    window.open("https://www.google.com", "_blank");
+  const monitores = document.querySelector("#monitores");
+  monitores.addEventListener("click", function() {
+    window.open("/monitores", "_blank");
   });
 
-  const parasar = document.querySelector("#parasar");
-  parasar.addEventListener("click", function() {
-    window.open("https://www.google.com", "_blank");
+  const helpers = document.querySelector("#helpers");
+  helpers.addEventListener("click", function() {
+    window.open("/helpers", "_blank");
+  });
+
+  const supervisores = document.querySelector("#supervisores");
+  supervisores.addEventListener("click", function() {
+    window.open("/supervisores", "_blank");
   });
 }
 
 $ ( document ). on ( "keypress" , ".keypressbutton" , function ( event )  { 
-                                
+                      
   var keyCode =  event . which ||  event . keyCode ; 
-
   if  ( keyCode ==  13 )  { 
-
     $ ( "#procurarMilitarR" ). click (); 
-
     return  false ; 
-
   } 
-
 });
-
-
-
 $(document).ready(function() {
-
-
-
   $("#procurarMilitarR").click(function() {
     document.getElementById("saida").style.display = 'none';
     document.getElementById("saida2").style.display = 'block';

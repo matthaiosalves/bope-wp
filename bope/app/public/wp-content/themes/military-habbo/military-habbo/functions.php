@@ -1,5 +1,5 @@
 <?php
-
+require_once get_template_directory() . '../inc/class-wp-bootstrap-navwalker.php';
 /**
  * Military Habbo functions and definitions
  *
@@ -182,6 +182,12 @@ function my_custom_login_stylesheet() {
 	}
 	
 add_action( 'login_enqueue_scripts', 'my_custom_login_stylesheet' );
+
+register_nav_menus(
+	array(
+			'menu_bope' => __( 'Menu Bope', 'Menu Bope' )
+	)
+);
 
 
 

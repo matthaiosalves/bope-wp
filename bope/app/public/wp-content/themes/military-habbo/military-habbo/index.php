@@ -23,5 +23,4 @@ get_header();
 <?php get_template_part( 'template-parts/component', 'airplane--button' ); ?>
 </main>
 <?php
-// get_sidebar(); Só irei colocar para as paginas internas
 get_footer();

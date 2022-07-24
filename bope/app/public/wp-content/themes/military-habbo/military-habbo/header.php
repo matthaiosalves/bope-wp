@@ -35,10 +35,14 @@
   <meta property="twitter:image" content="assets/img/Footer/b24134s36114s42114s12104s0611474120e374ae98bce4a67c12e75e7d291.gif" />
   <!-- End SEO -->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/style.css" />
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1724764367903153"
+     crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -54,13 +58,14 @@
         <a class="navbar-brand d-md-none icon--airfoce" href="#">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Departaments/fab.gif" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">
+              <a class="nav-link" aria-current="page" href="/">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Navbar/Image-2181.png" alt="">
                 Início</a>
             </li>
@@ -70,20 +75,17 @@
                 Guias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/fardamentos/">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Navbar/Image-1598.png" alt="">
                 Fardamentos</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Navbar/IM_20A_1.gif" alt=""> Discord
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Navbar/IM_20A_1.gif" alt=""> TeamSpeak
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
+                <li><a class="dropdown-item" href="https://dev.bopehabbo.net/como-baixar/">Como baixar</a></li>
+                <li><a class="dropdown-item" href="#">Grupo de Helpers</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
@@ -95,9 +97,6 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
@@ -107,12 +106,25 @@
                 Login</a>
             </li>
           </ul>
-        </div>
+        </div> -->
+
+        <?php
+          wp_nav_menu( array(
+              'theme_location' => 'menu_bope',
+              'depth' => 2,
+              'container' => 'div',
+              'container_class' => 'collapse navbar-collapse',
+              'container_id' => 'bs-example-navbar-collapse-1',
+              'menu_class' => 'nav navbar-nav',
+              'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+              'walker' => new WP_Bootstrap_Navwalker())
+          );
+        ?>
+
       </div>
     </nav>
-
+    
     <div class="background--animate">
       <img class="background--animate-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Header/163-Sem-T-tulo-20220721190618.png"/>
     </div>
-		
   </header>

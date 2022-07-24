@@ -1,6 +1,7 @@
 @media (max-width: 992px) {
-  .navbar--bope .container #navbarNav ul .nav-item {
-    background-color: var(--Blue600);
+  .navbar--bope .container #bs-example-navbar-collapse-1ul .nav-item,
+  div#bs-example-navbar-collapse-1 {
+    background-color: var(--Black800);
   }
   .news--quick-acess a {
     width: 100%;
@@ -23,6 +24,19 @@
   .card--be-welcome .card-body > div .new--members:nth-child(2) {
     visibility: hidden;
   }
+  .navbar--bope .container #bs-example-navbar-collapse-1 ul .nav-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  ul.dropdown-menu.show {
+    text-align: center;
+    height:100%;
+  }
+  .card--departament .card-header h5 {
+    font-size:28px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -30,5 +44,9 @@
   .airplane--button,
   .background--animate .background--animate-sophia {
     display: none;
+  }
+
+  .card--departament .card-header h5 {
+    font-size:21px;
   }
 }
