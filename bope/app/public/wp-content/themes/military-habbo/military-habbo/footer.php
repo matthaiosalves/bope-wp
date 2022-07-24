@@ -16,13 +16,20 @@
     <div class="container">
       <h6>Siga-nos nas redes sociais</h6>
       <div class="footer--social">
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/instagram_2.png" alt="Social" target="_blank"></a>
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/youtube_2.png" alt="Social" target="_blank"></a>
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/room_icon_3.gif" alt="Social" target="_blank"></a>
-        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/b24134s36114s42114s12104s0611474120e374ae98bce4a67c12e75e7d291.gif" alt="Social" target="_blank"></a>
+          <?php $redes = get_field('rede_sociais');
+          if($redes): ?>
+            <a href="<?php echo $redes['instagram']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/instagram_2.png" alt="Social" target="_blank"></a>
+            <a href="<?php echo $redes['youtube']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/youtube_2.png" alt="Social" target="_blank"></a>
+          <?php endif; ?>
+
+        <?php $instituicao = get_field('instituicao');
+        if($instituicao): ?>
+          <a href="<?php echo $instituicao['quarto']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/room_icon_3.gif" alt="Social" target="_blank"></a>
+          <a href="<?php echo $instituicao['grupo']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/b24134s36114s42114s12104s0611474120e374ae98bce4a67c12e75e7d291.gif" alt="Social" target="_blank"></a>
+        <?php endif; ?>
       </div>
       <hr>
-      <small><a href="https://www.habbo.com.br/" target="_blank"><img class="footer--habbo-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/1503__-3eM.png" alt="Habbo"></a> © <?php the_time( 'Y' ); ?> - Desenvolvido por Matheus Alves</small>
+      <small><a href="https://www.habbo.com.br/" target="_blank"><img class="footer--habbo-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/Footer/1503__-3eM.png" alt="Habbo"></a> © <?php the_time( 'Y' ); ?> - Desenvolvido por <a class="text-white" href="https://matheusalves.space/" target="_blank">Matheus Alves</a></small>
     </div>
   </div>
 </footer>
