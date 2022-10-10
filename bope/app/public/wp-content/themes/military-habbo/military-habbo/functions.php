@@ -189,5 +189,25 @@ register_nav_menus(
 	)
 );
 
+//[aposentados]
+function aposentados_func(){
+  $html = '';
+
+  $url = "https://bopehabbo.net/api/v2/aposentados.php";
+  $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+  $api = json_decode(curl_exec($ch), true);
+
+  $html .= '<p>';
+    foreach($api as $item) {
+      $html .= '<img title="Ex-'.$item['pat_nome'].', '.$item['nome'].'" src="https://www.habbo.com.br/habbo-imaging/avatarimage?img_format=png&amp;user='.$item['nome'].'&amp;direction=2&amp;head_direction=2&amp;size=m&amp;action=std" alt="" width="64" height="110">';
+    }
+  $html .= '</p>';
+
+  return $html;
+}
+add_shortcode( 'aposentados', 'aposentados_func' );
+
 
 
